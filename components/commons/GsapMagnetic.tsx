@@ -40,7 +40,17 @@ export default function GsapMagnetic({children}:Props) {
         };
     }, []);
 
+    // --- SOLUCIÓN DEL ERROR ---
+    // 1. Verificamos que 'children' sea un único elemento React válido
+    if (!React.isValidElement(children)) {
+        // Si no es un elemento válido (es un array, string, null, etc.),
+        // simplemente retornamos lo que se nos pasó o un mensaje de error.
+        return children; 
+    }
+
+    // 2. Usamos el Asignamiento de Tipo (Type Assertion) para convencer a TypeScript
+    // de que el elemento es el tipo correcto para recibir la ref.
     return (
-        React.cloneElement(children, {ref})
+        React.cloneElement(children as React.ReactElement<any>, { ref })
     )
 }
