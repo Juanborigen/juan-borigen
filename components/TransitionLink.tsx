@@ -1,9 +1,8 @@
 "use client"
-import React, { ReactNode, use, useRef } from 'react'
+import React, { ReactNode } from 'react'
 import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/navigation'
 import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
 
 interface TransitionLinkProps extends LinkProps {
     children: ReactNode,

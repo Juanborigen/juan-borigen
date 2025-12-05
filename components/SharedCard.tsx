@@ -12,7 +12,7 @@ export default function SharedCard() {
   const cardRef = useRef<HTMLDivElement>(null)
 
   const handleClick = () => {
-    const state = Flip.getState(cardRef.current as Element)
+    const stgtate = Flip.getState(cardRef.current as Element)
 
     // Guarda en localStorage o contexto que debe hacer Flip
     localStorage.setItem('flip', 'true')
