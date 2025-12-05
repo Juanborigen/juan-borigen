@@ -15,7 +15,6 @@ const About = () => {
         start: "top bottom",
         end: "top 80%",
         scrub: 2,
-        markers: true,
       },
       scaleX: .95,
       opacity: 0,

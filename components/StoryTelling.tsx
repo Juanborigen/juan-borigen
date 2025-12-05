@@ -14,7 +14,6 @@ useGSAP(() => {
         start: "top bottom",
         end: "+=2000 top",
         scrub: 2,
-        markers: true,
         pin: true,
       },
       opacity: 0, 
