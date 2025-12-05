@@ -1,4 +1,3 @@
-import PageTransition from '@/components/PageTransitions'
 import Link from 'next/link'
 import React from 'react'
 

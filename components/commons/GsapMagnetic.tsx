@@ -2,7 +2,11 @@
 import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 
-export default function GsapMagnetic({children}:any) {
+type Props = {
+    children: React.ReactNode
+}
+
+export default function GsapMagnetic({children}:Props) {
     const ref = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -35,7 +39,7 @@ export default function GsapMagnetic({children}:any) {
             el.removeEventListener("mouseleave", MouseLeave);
         };
     }, []);
-    
+
     return (
         React.cloneElement(children, {ref})
     )

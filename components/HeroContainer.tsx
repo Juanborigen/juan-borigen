@@ -5,7 +5,6 @@ import gsap from 'gsap';
 import VideoSlider from './VideoSlider';
 import Header from './Header';
 import Hero from './Hero';
-import Services from './Services';
 import About from './About';
 
 const HeroContainer = () => {

@@ -73,7 +73,7 @@ const Services = () => {
           <div className='flex flex-col max-w-[600px] gap-4'>
             <div className='flex gap-1 flex-wrap reveal-wrapper'>
               {
-                  P1.split(" ").map((char:any, index:any) => (
+                  P1.split(" ").map((char:string, index:number) => (
                           <p className='reveal text-xl text-[#1c1313] tracking-tight leading-[28px]' key={index}>{char}</p>
                   ))
               }
@@ -87,7 +87,7 @@ const Services = () => {
                   <h3 className='tracking-tighter font-semibold text-[#1c1313] text-6xl'>01.</h3>
                   <h3 className='tracking-tighter font-semibold text-[#1c1313] text-6xl'>Web Design</h3>
                 </div>
-                <p className='max-w-[700px] text-[#1c1313] text-xl pt-4'>Designs that not only look good, but also communicate the essence of your brand. Each project begins with an analysis of the industry and current trends to understand what works in your field and why. Unique, responsive, and conversion-oriented interfaces.<br/> Because good design isn't just aesthetic: it's strategic.</p>
+                <p className='max-w-[700px] text-[#1c1313] text-xl pt-4'>Designs that not only look good, but also communicate the essence of your brand. Each project begins with an analysis of the industry and current trends to understand what works in your field and why. Unique, responsive, and conversion-oriented interfaces.<br/> Because good design isn&apos;t just aesthetic: it&apos;s strategic.</p>
               </div>
             </div>
             <div className='border-t -translate-y-60 second__ py-4 px-6 rounded-lg bg-[#EDEDED]'>
@@ -105,7 +105,7 @@ const Services = () => {
                   <h3 className='tracking-tighter font-semibold text-[#1c1313] text-6xl'>03.</h3>
                   <h3 className='tracking-tighter font-semibold text-[#1c1313] text-6xl'>SEO</h3>
                 </div>
-                <p className='max-w-[700px] text-[#1c1313]  text-xl pt-4'>It's no use having an amazing website if no one can find it. From code to images, I optimize every technical aspect to improve search engine rankings. Proper tagging, clean structures, and minimal loading times all contribute to making your website not only visible, but relevant. More traffic, more opportunities.</p>
+                <p className='max-w-[700px] text-[#1c1313]  text-xl pt-4'>It&apos;s no use having an amazing website if no one can find it. From code to images, I optimize every technical aspect to improve search engine rankings. Proper tagging, clean structures, and minimal loading times all contribute to making your website not only visible, but relevant. More traffic, more opportunities.</p>
               </div>
             </div>
           </div>

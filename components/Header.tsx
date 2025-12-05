@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -28,7 +28,7 @@ const Header = () => {
     })
   })
 
-  const handleScroll = (event:any) => {
+  const handleScroll = (event:React.MouseEvent) => {
     event.preventDefault(); // Prevent the default link behavior
     const element = document.getElementById('services');
     if (element) {

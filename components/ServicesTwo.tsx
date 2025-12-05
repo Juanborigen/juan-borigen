@@ -78,7 +78,7 @@ const ServicesTwo = () => {
         <div className='first'>
             <h3 className='uppercase text-[96px] tracking-tight font-bold text-white text-center leading-[90px]'>how can i<br/> help you?</h3>
             <div className='flex flex-col items-center max-w-[600px] gap-6' >
-                <p className='text-xl pt-6 text-white p__1 text-center tracking-tight leading-[28px]'>My goal is to convey your brand's values ​​and identity through your website in a creative and innovative way without sacrificing results, optimization, and a smooth experience.</p>
+                <p className='text-xl pt-6 text-white p__1 text-center tracking-tight leading-[28px]'>My goal is to convey your brand&apos;s values ​​and identity through your website in a creative and innovative way without sacrificing results, optimization, and a smooth experience.</p>
                 <p className='text-xl pt-4 text-white p__2 text-center tracking-tight leading-[28px]'>Finding the perfect balance between <span className='underline text-[#2A4B7C] font-medium'>aesthetics</span> and <span className='underline font-medium text-[#943f39]'>functionality.</span></p>
                 <Image className='img__' src={'/assets/images/flower-life-white.jpg'} alt='' height={100} width={100} />
             </div>
@@ -89,7 +89,7 @@ const ServicesTwo = () => {
               <h3 className='tracking-tighter font-semibold text-white text-6xl'>01.</h3>
               <h3 className='tracking-tighter font-semibold text-white text-6xl'>Web Design</h3>
             </div>
-            <p className='max-w-[700px] text-white  text-xl pt-4'>Designs that not only look good, but also communicate the essence of your brand. Each project begins with an analysis of the industry and current trends to understand what works in your field and why. Unique, responsive, and conversion-oriented interfaces.<br/> Because good design isn't just aesthetic: it's strategic.</p>
+            <p className='max-w-[700px] text-white  text-xl pt-4'>Designs that not only look good, but also communicate the essence of your brand. Each project begins with an analysis of the industry and current trends to understand what works in your field and why. Unique, responsive, and conversion-oriented interfaces.<br/> Because good design isn&apos;t just aesthetic: it&apos;s strategic.</p>
           </div>
           <div className='py-4 bg-black services__2 flex flex-col px-2 rounded-lg rounded-t-none -translate-y-[170px]'>
             <div className='flex gap-4 border-b border-[#EDEDED] pb-2 items-center'>
@@ -103,7 +103,7 @@ const ServicesTwo = () => {
               <h3 className='tracking-tighter font-semibold text-white text-6xl'>03.</h3>
               <h3 className='tracking-tighter font-semibold text-white text-6xl'>SEO</h3>
             </div>
-            <p className='max-w-[700px] text-white  text-xl pt-4'>It's no use having an amazing website if no one can find it. From code to images, I optimize every technical aspect to improve search engine rankings. Proper tagging, clean structures, and minimal loading times all contribute to making your website not only visible, but relevant. More traffic, more opportunities.</p>
+            <p className='max-w-[700px] text-white  text-xl pt-4'>It&apos;s no use having an amazing website if no one can find it. From code to images, I optimize every technical aspect to improve search engine rankings. Proper tagging, clean structures, and minimal loading times all contribute to making your website not only visible, but relevant. More traffic, more opportunities.</p>
           </div>
         </div>
       </div>
