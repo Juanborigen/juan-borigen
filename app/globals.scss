@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "variables.scss";
+
+@theme {
+  --color-main-white: #f9f3f3;
+  --color-main-black: #1C1313;
+}
+
+
+:root {
+  background-color: #000000;
+}
+
+h1, h2 {
+  font-family: $GeneralSans, sans-serif;
+  color: #f9f3f3;
+}
+
+/* a {
+  font-family: "Neue Montreal", sans-serif;
+  color: $rich-black;
+} */
+
+a, h4, h5, h6, button{
+  font-family: $GeneralSans, sans-serif;
+  color: #f9f3f3;
+}
+
+//#1C1313 black color
+
+.white {
+  background-color: #f9f3f3;
+}
+
+.transition-color {
+  background-image: linear-gradient(to top, #1c1313 0%, black 100%);
+}
+
+//Lenis Smooth Scroll
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

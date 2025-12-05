@@ -1,0 +1,25 @@
+//Colors
+$onyx: #403F4C;
+$raisin-black: #2C2B3C;
+$gunmetal: #1B2432;
+$rich-black: #121420;
+$my-red: #943f39;
+$red-black: #1C1313;
+$indian-blue: #2A4B7C;
+
+//Fonts
+$vogue: 'Classy Vogue', sans-serif;
+$GeneralSans: 'General Sans', sans-serif;
+
+@font-face {
+    font-family: 'Classy Vogue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/classy-vogue.ttf');
+  }
+
+  @font-face {
+    font-family: 'General Sans';
+    font-style: normal;
+    src: url('/assets/fonts/GeneralSans-Variable.ttf');
+  }
