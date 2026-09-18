@@ -4,46 +4,50 @@ import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/navigation'
 import gsap from 'gsap'
 
+const OVERLAY_ID = 'transition-overlay'
+const COVER_DURATION = 0.6
+
 interface TransitionLinkProps extends LinkProps {
     children: ReactNode,
     href: string,
+    className?: string,
 }
-
 
 export const TransitionLink = ({
     children,
     href,
+    className,
     ...props
 }: TransitionLinkProps) => {
 
     const router = useRouter();
 
-
-    const handleTransitions = async (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         e.preventDefault();
 
-        const element = document.getElementsByClassName('element');
+        const overlay = document.getElementById(OVERLAY_ID);
 
-            gsap.to(element, {
-                duration: 0.5,
-                opacity: 1,
-                y: 0,
-                yPercent: -100,
-                ease: 'power2.out',
-                stagger: 0.1,
-            });
+        if (!overlay) {
+            router.push(href);
+            return;
+        }
 
-        console.log('Element', element);
-
-        //Exit animation
-        router.push(href);
-        //Entrance animation
-        
+        // Entra desde abajo cubriendo la pantalla antes de navegar;
+        // Transitions.tsx se encarga de revelarla una vez cambia la ruta.
+        gsap.set(overlay, { y: '100%' });
+        gsap.to(overlay, {
+            y: '0%',
+            duration: COVER_DURATION,
+            ease: 'power1.inOut',
+            onComplete: () => router.push(href),
+        });
     }
-    
+
   return (
-    <Link  className='cursor-pointer text-4xl text-white hover:underline' onClick={handleTransitions} href={href} {...props}>
+    <Link className={className ?? 'cursor-pointer text-4xl text-foreground hover:underline'} onClick={handleClick} href={href} {...props}>
         {children}
     </Link>
   )
 }
+
+export default TransitionLink

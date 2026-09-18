@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/juanmanuelborigen/Desktop/HippoSoft/juan-borigen/app/escritos/\\\\[slug\\\\])",
+      "Bash(npm install *)"
+    ],
+    "additionalDirectories": [
+      "/Users/juanmanuelborigen/Desktop/HippoSoft/juan-borigen/app/escritos"
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import VideoSlider from './VideoSlider';
+import VideoSlider from '../VideoSlider';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About';

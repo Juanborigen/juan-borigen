@@ -46,11 +46,11 @@ export default function CustomCursor() {
         window.addEventListener("mousemove", manageMouseMove);
 
         const scaleUp = () => {
-            gsap.to(circle.current, { scale: 1.6, duration: .8, ease: "power3.out", borderColor: "#B76D68" });
+            gsap.to(circle.current, { scale: 1.6, duration: .8, ease: "power3.out", backgroundColor: "transparent" });
         };
 
         const scaleDown = () => {
-            gsap.to(circle.current, { scale: 1, duration: .8, ease: "power3.out", borderColor: "#FFFFFF" });
+            gsap.to(circle.current, { scale: 1, duration: .8, ease: "power3.out", backgroundColor: "#FFFFFF" });
         };
 
         const targets = document.querySelectorAll("a, button, link, [data-cursor='hover']");
@@ -72,7 +72,7 @@ export default function CustomCursor() {
     return(
         <div 
             ref={circle}
-            className="fixed z-50 flex bg-[#B76D68] top-0 left-0 rounded-sm mix-blend-difference pointer-events-none custom-cursor"
+            className="fixed z-50 flex top-0 left-0 rounded-full border-1 border-white bg-white mix-blend-difference pointer-events-none custom-cursor"
             style={{
                 width: size,
                 height: size,

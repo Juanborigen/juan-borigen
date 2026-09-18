@@ -14,8 +14,9 @@ export default function Transitions() {
     const el = transitionRef.current
     if (!el) return
 
+    // Cubrir la pantalla ocurre antes de navegar (ver TransitionLink.tsx);
+    // acá solo se revela la ruta ya montada.
     const tl = gsap.timeline()
-
 
     tl.to(el, {
       y: '-100%',
@@ -34,8 +35,9 @@ export default function Transitions() {
 
   return (
     <div
+      id="transition-overlay"
       ref={transitionRef}
-      className="fixed h-[150vh] inset-0 z-50 transition-color pointer-events-none"
+      className="fixed inset-0 h-[150vh] z-50 bg-background pointer-events-none"
     />
   )
 }
