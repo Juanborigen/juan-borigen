@@ -1,4 +1,4 @@
-'use client';
+/* 'use client';
 
 import { useEffect, useRef, useState} from 'react';
 
@@ -56,10 +56,8 @@ export default function VideoSlider() {
         }`}
       />
 
-      {/* Overlay oscuro */}
       <div className="absolute inset-0 bg-black/40 z-10" />
 
-      {/* Viñeta radial SVG */}
       <div className="pointer-events-none absolute inset-0 z-20">
         <svg
           className="w-full h-full"
@@ -76,3 +74,4 @@ export default function VideoSlider() {
     </div>
   );
 }
+*/
