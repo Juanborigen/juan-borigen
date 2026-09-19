@@ -1,6 +1,6 @@
 import type { WPCategory, WPPost } from "@/types/post";
 
-const WP_API_BASE = "https://juanborigen.com/wp-json/wp/v2";
+const WP_API_BASE = "https://admin.juanborigen.com/wp-json/wp/v2";
 const WP_API_URL = `${WP_API_BASE}/posts`;
 const WP_CATEGORIES_URL = `${WP_API_BASE}/categories`;
 const MAX_CATEGORIES_PER_PAGE = 100;
